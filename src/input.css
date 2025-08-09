@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --red: hsl(4, 100%, 67%);
+    --blue-800: hsl(234, 29%, 20%);
+    --blue-700: hsl(235, 18%, 26%);
+    --grey: hsl(0, 0%,58%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+
+
+@font-face {
+    font-family: "Roboto";
+    src: 
+    url(/assets/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(/assets/fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+button {
+    @apply px-10 py-4 bg-blue-800 text-white rounded-lg font-bold;
+}
+.card {
+    @apply max-w-[375px] w-full grid grid-cols-1 bg-white md:rounded-xl md:max-w-[400px] desktop:max-w-[54rem] desktop:grid-cols-[auto_350px] desktop:p-6 desktop:rounded-[2rem];
+}
+.card__image {
+    @apply object-cover desktop:order-1;
+}
+.card__content {
+    @apply px-6 py-8 flex flex-col justify-center gap-4 text-[16px] text-blue-800 desktop:ps-10 desktop:pe-16 desktop:py-[4rem] desktop:gap-5 desktop:-order-1;
+}
+.card__content > h1 {
+    @apply text-[2.5rem] font-bold desktop:text-[3.5rem] desktop:leading-none;
+}
+.content__infos-updates {
+    @apply flex gap-2 flex-col
+}
+.content__infos-updates > li{
+    @apply flex gap-4 items-start
+}
+
+.content__form {
+    @apply flex flex-col mt-4 gap-2;
+}
+.content__form > label {
+    @apply text-xs font-bold;
+}
+.form__input {
+    @apply py-4 px-6 text-base border border-grey text-grey mb-4 rounded-lg;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body class="font-roboto flex items-center justify-center bg-blue-700 min-h-[100vh]">
+    <!-- Sign-up form start -->
+    <main class="card">
+      <picture class="card__image">
+        <source srcset="/assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1139px)">
+        <source srcset="/assets/images/illustration-sign-up-tablet.svg" media="(min-width: 376px)">
+        <source srcset="/assets/images/illustration-sign-up-mobile.svg" media="(min-width: 0)">
+        <img src="/assets/ima/ges/illustration-sign-up-mobile.svg" alt="">
+      </picture>
+      <!-- <img
+        src="/assets/images/illustration-sign-up-mobile.svg"
+        alt="Signup Illustratioin" class="card__image"
+      /> -->
+
+      <div class="card__content">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="content__infos-updates">
+          <li class="info">
+            <img src="/assets/images/icon-list.svg" alt="" />
+            <p>Product discovery and building what matters</p>
+          </li>
+          <li class="info">
+            <img src="/assets/images/icon-list.svg" alt="">
+            <p>Measuring to ensure updates are a success</p>
+          </li>
+          <li class="info">
+            <img src="/assets/images/icon-list.svg" alt="">
+            <p>And much more</p>
+          </li>
+        </ul>
+        <form id="form" class="content__form">
+          <label for="email">Email address</label>
+          <span class="hidden form__error-msg">Valid email required</span>
+          <input type="email" name="email" class="form__input" placeholder="email@company.com" />
+          <button>Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </main>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="hidden mobile-success">
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <button>Dismiss message</button>
+    </div>
+    <!-- Success message end -->
+  </body>
+</html>
