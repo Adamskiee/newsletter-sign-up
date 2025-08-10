@@ -31,34 +31,60 @@
 }
 
 
-button {
-    @apply px-10 py-4 bg-blue-800 text-white rounded-lg font-bold;
-}
-.card {
-    @apply max-w-[375px] w-full grid grid-cols-1 bg-white md:rounded-xl md:max-w-[400px] desktop:max-w-[54rem] desktop:grid-cols-[auto_350px] desktop:p-6 desktop:rounded-[2rem];
-}
+
+
 .card__image {
     @apply object-cover desktop:order-1;
 }
 .card__content {
-    @apply px-6 py-8 flex flex-col justify-center gap-4 text-[16px] text-blue-800 desktop:ps-10 desktop:pe-16 desktop:py-[4rem] desktop:gap-5 desktop:-order-1;
+    @apply px-6 py-4 flex flex-col justify-center gap-4 text-[16px] text-blue-800 desktop:ps-10 desktop:pe-16 desktop:gap-5 desktop:-order-1;
 }
 .card__content > h1 {
     @apply text-[2.5rem] font-bold desktop:text-[3.5rem] desktop:leading-none;
 }
 .content__infos-updates {
-    @apply flex gap-2 flex-col
+    @apply flex gap-2 flex-col mt-[13px];
 }
 .content__infos-updates > li{
     @apply flex gap-4 items-start
 }
 
 .content__form {
-    @apply flex flex-col mt-4 gap-2;
+    @apply flex flex-col mt-[22px] gap-[10px];
 }
-.content__form > label {
-    @apply text-xs font-bold;
+button {
+    @apply px-10 py-4 bg-blue-800 text-white rounded-lg font-bold hover:bg-gradient-to-r hover:from-[#FF537B] hover:to-[#FF6742];
 }
-.form__input {
-    @apply py-4 px-6 text-base border border-grey text-grey mb-4 rounded-lg;
+.form__label {
+    @apply text-xs font-bold flex justify-between;
+}
+
+.form__error-msg {
+    @apply text-red;
+}
+@layer components {
+    .content__form .form__input {
+        @apply py-4 px-6 text-base border border-grey text-grey mb-4 rounded-lg focus:border-blue-800 focus:outline-none focus:text-blue-800;
+    }
+    .card {
+    @apply max-w-[375px] w-full grid grid-cols-1 bg-white md:rounded-xl md:max-w-[400px] desktop:max-w-[927px] desktop:grid-cols-[auto_365px] desktop:p-6 desktop:rounded-[2rem];
+    }
+    .content__form .form__input.input-error {
+    @apply border-red text-red bg-[#FFE8E6];
+    }
+    .mobile-success {
+        @apply bg-white px-6 min-h-screen flex flex-col py-12;
+    }
+    .row-1{
+        @apply flex flex-col justify-center gap-8 flex-1;
+    }
+    .row-1 > img {
+        @apply size-16;
+    }
+    .row-1 > h1 {
+        @apply text-[2.5rem] font-bold leading-none ;
+    }
+    .mobile-success > button {
+        @apply w-full
+    }
 }
