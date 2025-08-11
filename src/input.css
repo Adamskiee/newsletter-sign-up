@@ -37,20 +37,20 @@
     @apply object-cover desktop:order-1;
 }
 .card__content {
-    @apply px-6 py-4 flex flex-col justify-center gap-4 text-[16px] text-blue-800 desktop:ps-10 desktop:pe-16 desktop:gap-5 desktop:-order-1;
+    @apply px-6 py-4 flex flex-col justify-center gap-4 text-base text-blue-800 desktop:ps-10 desktop:pe-16 desktop:gap-5 desktop:-order-1;
 }
 .card__content > h1 {
     @apply text-[2.5rem] font-bold desktop:text-[3.5rem] desktop:leading-none;
 }
 .content__infos-updates {
-    @apply flex gap-2 flex-col mt-[13px];
+    @apply flex gap-2 flex-col mt-[0.8125rem];
 }
 .content__infos-updates > li{
     @apply flex gap-4 items-start
 }
 
 .content__form {
-    @apply flex flex-col mt-[22px] gap-[10px];
+    @apply flex flex-col mt-[1.375rem] gap-[0.625rem];
 }
 button {
     @apply px-10 py-4 bg-blue-800 text-white rounded-lg font-bold hover:bg-gradient-to-r hover:from-[#FF537B] hover:to-[#FF6742];
@@ -62,29 +62,31 @@ button {
 .form__error-msg {
     @apply text-red;
 }
+
+.row-1{
+    @apply flex flex-col justify-center gap-8 flex-1 md:flex-none;
+}
+.row-1 > img {
+    @apply size-16;
+}
+.row-1 > h1 {
+    @apply text-[2.5rem] font-bold leading-none md:text-[3.5rem];
+}
+.mobile-success > button {
+    @apply w-full;
+}
+
 @layer components {
     .content__form .form__input {
         @apply py-4 px-6 text-base border border-grey text-grey mb-4 rounded-lg focus:border-blue-800 focus:outline-none focus:text-blue-800;
     }
     .card {
-    @apply max-w-[375px] w-full grid grid-cols-1 bg-white md:rounded-xl md:max-w-[400px] desktop:max-w-[927px] desktop:grid-cols-[auto_365px] desktop:p-6 desktop:rounded-[2rem];
+        @apply max-w-[23.4375rem] w-full grid grid-cols-1 bg-white md:rounded-xl md:max-w-[25rem] desktop:max-w-[57.9375rem] desktop:grid-cols-[auto_22.8125rem] desktop:p-6 desktop:rounded-[2rem] shadow-xl;
     }
     .content__form .form__input.input-error {
-    @apply border-red text-red bg-[#FFE8E6];
+        @apply border-red text-red bg-[#FFE8E6];
     }
     .mobile-success {
-        @apply bg-white px-6 min-h-screen flex flex-col py-12;
-    }
-    .row-1{
-        @apply flex flex-col justify-center gap-8 flex-1;
-    }
-    .row-1 > img {
-        @apply size-16;
-    }
-    .row-1 > h1 {
-        @apply text-[2.5rem] font-bold leading-none ;
-    }
-    .mobile-success > button {
-        @apply w-full
+        @apply bg-white px-6 min-h-screen flex flex-col py-12 md:px-12 text-blue-800 md:py-6 md:max-w-[30rem] md:min-h-[30rem] md:rounded-3xl md:gap-8 justify-center shadow-xl;
     }
 }
