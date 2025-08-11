@@ -16,7 +16,6 @@ form.addEventListener("submit", handleSubmit);
 
 emailInput.addEventListener("invalid", (e)=>{
     let inputValue = e.target;
-    console.log(inputValue.validity);
     if(inputValue.validity.typeMismatch || inputValue.validity.typeMismatch) {
         inputValue.setCustomValidity(" ");
         errorMsg.classList.remove("hidden");

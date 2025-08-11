@@ -37,7 +37,7 @@
     @apply object-cover desktop:order-1;
 }
 .card__content {
-    @apply px-6 py-4 flex flex-col justify-center gap-4 text-base text-blue-800 desktop:ps-10 desktop:pe-16 desktop:gap-5 desktop:-order-1;
+    @apply px-6 py-4 flex flex-col justify-center gap-4 text-base md:gap-4 text-blue-800 desktop:ps-10 desktop:pe-16 desktop:gap-5 desktop:-order-1;
 }
 .card__content > h1 {
     @apply text-[2.5rem] font-bold desktop:text-[3.5rem] desktop:leading-none;
@@ -81,7 +81,7 @@ button {
         @apply py-4 px-6 text-base border border-grey text-grey mb-4 rounded-lg focus:border-blue-800 focus:outline-none focus:text-blue-800;
     }
     .card {
-        @apply max-w-[23.4375rem] w-full grid grid-cols-1 bg-white md:rounded-xl md:max-w-[25rem] desktop:max-w-[57.9375rem] desktop:grid-cols-[auto_22.8125rem] desktop:p-6 desktop:rounded-[2rem] shadow-xl;
+        @apply max-w-[23.4375rem] min-h-screen w-full grid grid-cols-1 bg-white md:rounded-xl md:min-h-[auto] md:max-w-[25rem] desktop:max-w-[57.9375rem] desktop:grid-cols-[auto_22.8125rem] desktop:p-6 desktop:rounded-[2rem] shadow-xl;
     }
     .content__form .form__input.input-error {
         @apply border-red text-red bg-[#FFE8E6];

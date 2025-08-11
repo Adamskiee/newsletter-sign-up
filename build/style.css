@@ -567,6 +567,7 @@ video {
 
 .card {
   display: grid;
+  min-height: 100vh;
   width: 100%;
   max-width: 23.4375rem;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -578,12 +579,13 @@ video {
 
 @media (min-width: 768px) {
   .card {
+    min-height: auto;
     max-width: 25rem;
     border-radius: 0.75rem;
   }
 }
 
-@media (min-width: 1139px) {
+@media (min-width: 71.1875rem) {
   .card {
     max-width: 57.9375rem;
     grid-template-columns: auto 22.8125rem;
@@ -698,7 +700,7 @@ video {
      object-fit: cover;
 }
 
-@media (min-width: 1139px) {
+@media (min-width: 71.1875rem) {
   .card__image {
     order: 1;
   }
@@ -718,7 +720,13 @@ video {
   color: var(--blue-800);
 }
 
-@media (min-width: 1139px) {
+@media (min-width: 768px) {
+  .card__content {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 71.1875rem) {
   .card__content {
     order: -1;
     gap: 1.25rem;
@@ -732,7 +740,7 @@ video {
   font-weight: 700;
 }
 
-@media (min-width: 1139px) {
+@media (min-width: 71.1875rem) {
   .card__content > h1 {
     font-size: 3.5rem;
     line-height: 1;

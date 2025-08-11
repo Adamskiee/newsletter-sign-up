@@ -37,7 +37,6 @@ npm-debug.log*
 *.pem
 .DS_Store
 Thumbs.db
-README*.md
 style-guide.md
 preview.jpg
 design
