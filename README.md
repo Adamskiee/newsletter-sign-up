@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Adamskiee/newsletter-sign-up)
-- Live Site URL: [Website](https://adamskiee.github.io/article-preview-component/newsletter-sign-up)
+- Live Site URL: [Website](https://adamskiee.github.io/newsletter-sign-up)
 - Figma: [Figma](https://www.figma.com/design/FpvNxRpVcmbwqLq389m3RL/Newsletter-Signup?node-id=0-1&t=owhJHBwBo8NoU3oh-1)
 
 ## My process
